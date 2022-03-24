@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  color: #ED254E;
+  font-family: "Arial", Arial, sans-serif;
+  background:#000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+    text-decoration: none;
+    color: #F9DC5C;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.nos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #011936;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #002e65;
+}
+section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+section img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    filter: grayscale(.5);
+}
+section .text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section .text p{
+    color: #b3b3b3;
+}
+section .col2-spacer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section .social-media{
+    display: flex;
+    gap: 14px;
+}
+
+section .social-media a:not(:last-child)::after{
+    content: " • ";
+    color: #465362;
+    position: absolute;padding: 0 4px;
+}
