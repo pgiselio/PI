@@ -48,6 +48,7 @@ section{
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 section img{
     height: 170px;
@@ -78,4 +79,17 @@ section .social-media a:not(:last-child)::after{
     content: " • ";
     color: #465362;
     position: absolute;padding: 0 4px;
+}
+
+@media (max-width: 766px){
+    section{
+        justify-content: center;
+    }
+    section .text{
+        text-align: center;
+    }
+    section .social-media{
+        justify-content: center;
+
+    }
 }
