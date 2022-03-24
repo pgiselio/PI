@@ -87,6 +87,10 @@ section .social-media a:not(:last-child)::after{
     }
     section .text{
         text-align: center;
+        width: 100%;
+    }
+    section .text *{
+        width: 100vw;
     }
     section .social-media{
         justify-content: center;
